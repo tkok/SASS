@@ -21,11 +21,17 @@ This assignment is a part of the Advance Mobile and Distributed Systems Seminar.
 \begin{equation}
 \begin{split}
 SYSTEM_1 \stackrel{\mathrm{def}}{=} (v\,talk_i , switch_i , give_i , alert_i : i = 1,2) \\
- (CAR(talk_1 , switch_1) | Base_1 | IDLEBASE_2 | CENTRE_1) \\
+(CAR(talk_1 , switch_1) | Base_1 | IDLEBASE_2 | CENTRE_1)
 \end{split}
 \end{equation}
 
+\begin{equation}
+IDLEBASE(t, s, g, a) \stackrel{\mathrm{def}}{=} a.BASE(t,s,g,a)
+\end{equation}
 
+\begin{equation}
+BASE_i \stackrel{\mathrm{def}}{=} BASE(talk_i , switch_i , give_i , alert_i) \quad (i=1,2)
+\end{equation}
 
 
 
