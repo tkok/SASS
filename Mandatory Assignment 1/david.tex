@@ -1,0 +1,22 @@
+\begin{equation}
+\begin{split}
+{\rm CAR}(talk, switch) \stackrel{\rm def}{=} talk . {\rm CAR}(talk, switch) \\
++ switch(talk' switch') . {\rm CAR}(talk', switch')\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+{\rm BASE}(talk, switch, give, alert) \stackrel{\rm def}{=} talk . {\rm BASE}(task, switch, give, alert) \\
++ give(talk' switch') . \overline{switch} \langle talk' switch' \rangle . \\
+{\rm IDLEBASE}(task, switch, give, alert)
+\end{split}
+\end{equation}
+
+\begin{equation}
+{\rm IDLEBASE}(talk, switch, give, alert) \stackrel{\mathrm{def}}{=} alert.{\rm BASE}(talk,switch,give,alert)
+\end{equation}
+
+\begin{equation}
+{\rm BASE_i} \stackrel{\mathrm{def}}{=} {\rm BASE}(talk_i , switch_i , give_i , alert_i) \quad (i=1,2)
+\end{equation}
