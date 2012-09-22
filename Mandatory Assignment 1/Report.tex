@@ -20,8 +20,8 @@ This assignment is a part of the Advance Mobile and Distributed Systems Seminar.
 
 \begin{equation}
 \begin{split}
-SYSTEM_1 \stackrel{\mathrm{def}}{=} (v\,talk_i , switch_i , give_i , alert_i : i = 1,2) \\
-(CAR(talk_1 , switch_1) | Base_1 | IDLEBASE_2 | CENTRE_1)
+{\rm SYSTEM_1} \stackrel{\mathrm{def}}{=} (v\,talk_i , switch_i , give_i , alert_i : i = 1,2) \\
+({\rm CAR}(talk_1 , switch_1) | {\rm BASE_1} | {\rm IDLEBASE_2} | {\rm CENTRE_1})
 \end{split}
 \end{equation}
 
@@ -41,17 +41,17 @@ SYSTEM_1 \stackrel{\mathrm{def}}{=} (v\,talk_i , switch_i , give_i , alert_i : i
 \end{equation}
 
 \begin{equation}
-IDLEBASE(t, s, g, a) \stackrel{\mathrm{def}}{=} a.BASE(t,s,g,a)
+{\rm IDLEBASE}(t, s, g, a) \stackrel{\mathrm{def}}{=} a.{\rm BASE}(t,s,g,a)
 \end{equation}
 
 \begin{equation}
-BASE_i \stackrel{\mathrm{def}}{=} BASE(talk_i , switch_i , give_i , alert_i) \quad (i=1,2)
+{\rm BASE_i} \stackrel{\mathrm{def}}{=} {\rm BASE}(talk_i , switch_i , give_i , alert_i) \quad (i=1,2)
 \end{equation}
 
 \begin{equation}
 \begin{split}
-CENTRE_i \stackrel{\mathrm{def}}{=} \overline{give_1}talk_2switch_2.alert2.CENTRE_2 \\ 
-\overline{give_2}talk_1switch_1.alert1.CENTRE_1 
+{\rm CENTRE_i} \stackrel{\mathrm{def}}{=} \overline{give_1}talk_2switch_2.alert2.{\rm CENTRE_2} \\ 
+\overline{give_2}talk_1switch_1.alert1.{\rm CENTRE_1}
 \end{split}
 \end{equation}
 
