@@ -1,10 +1,13 @@
 % Example LaTeX document for GP111 - note % sign indicates a comment
-\documentstyle[11pt]{article}
+
+\documentclass[11pt]{article}
+\usepackage{amssymb,amsmath}
 % Default margins are too wide all the way around.  I reset them here
 \setlength{\topmargin}{-.5in}
 \setlength{\textheight}{9in}
 \setlength{\oddsidemargin}{.125in}
 \setlength{\textwidth}{6.25in}
+
 \begin{document}
 \title{Mandatory Assignment 1}
 \author{Group 1\\
@@ -15,14 +18,18 @@ This assignment is a part of the Advance Mobile and Distributed Systems Seminar.
 
 \section {Exercise 1, p. 12}
 
-
-
 \begin{equation}
-\left[
-{\bf X} + {\rm a} \ \geq\ 
-\underline{\hat a} \sum_i^N \lim_{x \rightarrow k} \delta C
-\right]
+\begin{split}
+SYSTEM_1 \stackrel{\mathrm{def}}{=} (v\,talk_i , switch_i , give_i , alert_i : i = 1,2) \\
+ (CAR(talk_1 , switch_1) | Base_1 | IDLEBASE_2 | CENTRE_1) \\
+\end{split}
 \end{equation}
+
+
+
+
+
+
 
 
 \end{document}
