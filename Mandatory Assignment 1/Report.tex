@@ -41,7 +41,7 @@ This assignment is a part of the Advance Mobile and Distributed Systems Seminar.
 \end{equation}
 
 \begin{equation}
-{\rm IDLEBASE}(t, s, g, a) \stackrel{\mathrm{def}}{=} a.{\rm BASE}(t,s,g,a)
+{\rm IDLEBASE}(talk, switch, give, alert) \stackrel{\mathrm{def}}{=} alert.{\rm BASE}(talk,switch,give,alert)
 \end{equation}
 
 \begin{equation}
@@ -50,8 +50,8 @@ This assignment is a part of the Advance Mobile and Distributed Systems Seminar.
 
 \begin{equation}
 \begin{split}
-{\rm CENTRE_i} \stackrel{\mathrm{def}}{=} \overline{give_1}talk_2switch_2.alert2.{\rm CENTRE_2} \\ 
-\overline{give_2}talk_1switch_1.alert1.{\rm CENTRE_1}
+{\rm CENTRE_i} \stackrel{\mathrm{def}}{=} \overline{give_1} \langle talk_2 switch_2 \rangle .alert2.{\rm CENTRE_2} \\ 
+\overline{give_2} \langle talk_1 switch_1 \rangle .alert1.{\rm CENTRE_1}
 \end{split}
 \end{equation}
 
