@@ -26,6 +26,21 @@ SYSTEM_1 \stackrel{\mathrm{def}}{=} (v\,talk_i , switch_i , give_i , alert_i : i
 \end{equation}
 
 \begin{equation}
+\begin{split}
+{\rm CAR}(talk, switch) \stackrel{\rm def}{=} talk . {\rm CAR}(talk, switch) \\
++ switch(talk' switch') . {\rm CAR}(talk', switch')\\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+{\rm BASE}(talk, switch, give, alert) \stackrel{\rm def}{=} talk . {\rm BASE}(task, switch, give, alert) \\
++ give(talk' switch') . \overline{switch} \langle talk' switch' \rangle . \\
+{\rm IDLEBASE}(task, switch, give, alert)
+\end{split}
+\end{equation}
+
+\begin{equation}
 IDLEBASE(t, s, g, a) \stackrel{\mathrm{def}}{=} a.BASE(t,s,g,a)
 \end{equation}
 
@@ -43,7 +58,7 @@ CENTRE_i \stackrel{\mathrm{def}}{=} \overline{give_1}talk_2switch_2.alert2.CENTR
 
 \section{Exercise 2, p. 13}
 
-SYSTEM_1 \stackrel{}{=}
+%SYSTEM_1 \stackrel{}{=}
 
 
 
